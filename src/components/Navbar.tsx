@@ -26,6 +26,7 @@ const NavRightList = (props: {
     generateOnClick: () => void,
     collectionOnClick: () => void,
     tradeupOnClick: () => void,
+    chatOnClick: () => void,
     themeOnClick: () => void
 }) => {
     const mobileStyles = `flex-col max-lg:absolute max-lg:right-6 max-lg:top-16 max-lg:p-4 max-lg:rounded-xl max-lg:border-2 max-lg:border-light-border max-lg:dark:border-dark-border max-lg:shadow-xl`
@@ -46,6 +47,11 @@ const NavRightList = (props: {
             {/* TradeUp */}
             <div className={mobileItemCtn}>
                 <span className="cursor-pointer hover:underline" onClick={() => props.tradeupOnClick()}>Trade Up</span>
+            </div>
+
+            {/* Chat */}
+            <div className={mobileItemCtn}>
+                <span className="cursor-pointer hover:underline" onClick={() => props.chatOnClick()}>Chat</span>
             </div>
 
 
@@ -84,6 +90,7 @@ const Navbar = () => {
                     generateOnClick={() => navigate(routerPaths.generate)}
                     collectionOnClick={() => navigate(routerPaths.collection)}
                     tradeupOnClick={() => navigate(routerPaths.tradeup)}
+                    chatOnClick={() => navigate(routerPaths.chat)}
                     themeOnClick={toggleTheme}
                 />
             </div>
@@ -104,6 +111,7 @@ const Navbar = () => {
                             generateOnClick={() => navigate(routerPaths.generate)}
                             collectionOnClick={() => navigate(routerPaths.generate)}
                             tradeupOnClick={() => navigate(routerPaths.tradeup)}
+                            chatOnClick={() => navigate(routerPaths.chat)}
                             themeOnClick={toggleTheme}
                         />
                     </div>
