@@ -15,7 +15,7 @@ import { RarityGroupData, RarityLevel } from "../types/Rarity";
 import GenerateContainer from "../components/GenerateContainer";
 import { NFTCreationStatus, nftCreationStatusMessages } from "../types/NFTCreationStatus";
 import { NFTExt } from "./Generate";
-import { Graviola } from "../../../contracts/typechain-types/contracts/Graviola";
+import { Graviola } from "../contracts/typechain-types/contracts/Graviola";
 import { parseEther } from "ethers";
 
 const TradeUp = () => {

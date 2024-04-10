@@ -12,7 +12,7 @@ import { nftCreationStatusMessages } from "../types/NFTCreationStatus"
 import SectionTitle from "../components/ui/SectionTitle"
 import { NFTCreationStatus } from "../types/NFTCreationStatus"
 import { parseEther } from "ethers"
-import { Graviola } from "../../../contracts/typechain-types/contracts/Graviola"
+import { Graviola } from "../contracts/typechain-types/contracts/Graviola"
 import { RarityGroupData, RarityLevel } from "../types/Rarity"
 import { RaritiesData } from "../types/RarityGroup"
 
